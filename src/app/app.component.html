@@ -1,0 +1,33 @@
+<router-outlet>
+    <div>
+        <div class="header">
+            <h2>Tenants</h2>
+            <input placeholder="Search for a tenant" type="text">
+        </div>
+
+        <div class="table">
+            <div class="grid-container">
+                <h4>Tenant ID</h4>
+                <h4>Activate</h4>
+                <h4>Tenant Name</h4>
+                <h4>Licenses</h4>
+                <h4>Contact</h4>
+                <h4>Contact Phone</h4>
+                <h4>Contact Email</h4>
+            </div>
+            <div *ngFor="let item of table">
+                <div class="grid-content" (click)=" openDialog(item.id)">
+                    <div>{{item.id}}</div>
+                    <div class="img">
+                        <img src="./../assets/image/Okay.png" alt="" *ngIf="item.activate === '1' ">
+                        <img src="./../assets/image/bad.png" alt="" *ngIf="item.activate === '0' ">
+                    </div>
+                    <div>{{item.licenses}}</div>
+                    <div>{{item.contact}}</div>
+                    <div>{{item.contact_phone}}</div>
+                    <div>{{item.contact_email}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</router-outlet>

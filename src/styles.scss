@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.custom-modalbox {
+    mat-dialog-container {
+        padding: 0px;
+        dialog-overview-example-dialog {
+            h3 {
+                margin-left: 20px;
+            }
+            h4 {
+                background-color: gray;
+            }
+            .dialog-content {
+                padding: 15px;
+                display: flex;
+            }
+            .dialog-title {
+                background-color: #4a4ae9;
+                color: white;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding-top: 15px;
+            }
+        }
+    }
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

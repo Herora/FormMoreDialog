@@ -1,0 +1,22 @@
+<div mat-dialog-title class="dialog-title">
+    <h2>Edit Tenant</h2>
+    <h4>ID: {{data.id}}</h4>
+</div>
+<div mat-dialog-content class="dialog-content">
+    <div>
+        <h3>General</h3>
+        <div *ngIf="step1" (click)="view()">
+        </div>
+    </div>
+
+    <div>
+        <h3>Contact Information</h3>
+        <div *ngIf="step2" (click)="view()">
+
+        </div>
+    </div>
+</div>
+<div mat-dialog-actions>
+    <!-- <button mat-button (click)="onNoClick()">No Thanks</button> -->
+    <!-- <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button> -->
+</div>
